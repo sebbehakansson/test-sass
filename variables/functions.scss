@@ -1,0 +1,11 @@
+@function circle-drop-shadow($layers, $c) {
+    $arr: ();
+    $dist: 5;
+
+    @for $i from 1 through $layers {
+        $percentage: $i * 10%;
+        $arr: append($arr, mix(white, $c, $percentage) 0px 0px 0px ($dist * $i * 1px), 'comma');
+    }
+
+    @return $arr;
+}

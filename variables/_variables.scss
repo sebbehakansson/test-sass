@@ -1,0 +1,10 @@
+$button-border: 3px solid yellow;
+
+$p-border: 5px solid black;
+
+@mixin green-border() {
+    border: 5px solid green;
+}
+
+$circle-diameter: 400;
+$circle-border-width: 4;
